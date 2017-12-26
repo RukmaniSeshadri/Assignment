@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:burlywood">
+   
+    <table>
+        <tr>
+            <td>
+                <img src="~/Images/Laptop.jpg" class="img-thumbnail" alt="Cinque Terre">
+                <div class="alert alert-success">
+                    <strong>Laptop </strong>
+                </div>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <strong>
+                       A laptop, often called a notebook or "notebook computer", is a small, portable personal computer with a "clamshell" form factor, an alphanumeric keyboard on the lower part of the "clamshell" and a thin LCD or LED computer screen on the upper part, which is opened up to use the computer. 
+                        </strong>
+                     
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Images/Mobile.jpg" class="img-thumbnail" alt="Cinque Terre">
+                <div class="alert alert-info">
+                    <strong>Mobile </strong>
+                </div>
+            </td>
+            <td>
+                <strong>
+                    A mobile phone, known as a cell phone in North America, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area. 
+                </strong>
+              
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Images/Microwave.jpg" class="img-thumbnail" alt="Cinque Terre">
+                <div class="alert alert-warning">
+                    <strong>Microwave </strong>
+                </div>
+            </td>
+            <td>
+                <strong>
+                    Microwaves are a form of electromagnetic radiation with wavelengths ranging from one meter to one millimeter; with frequencies between 300 MHz (100 cm) and 300 GHz (0.1 cm).
+                </strong>
+                
+            </td>
+        </tr>
+    </table>
+   
+   
+  
+
+      
+   
+
+
+    <div>
+       
+            @Html.ActionLink("Go back to Home Page", "Index", "Home")</div>
+    <div>
+            @Html.ActionLink("Go to Services Page", "Service", "Services")
+          
+        </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        #Home {
+            padding-top: 50px;
+            height: 500px;
+            color: #b6ff00;
+            background-color: #1E88E5;
+        }
+
+        #Products {
+            padding-top: 50px;
+            height: 500px;
+            color: #ffd800;
+            background-color: #673ab7;
+        }
+
+        #Services {
+            padding-top: 50px;
+            height: 500px;
+            color: #0ff;
+            background-color: #ff9800;
+        }
+
+      
+       
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MVC</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="Home" class="container-fluid">
+        <h1>Home</h1>
+<p>This is Home Page</p>  
+        <div style="color:black">
+            @Html.ActionLink("Products Page","Product","Products")
+        </div>     
+        <div style="color:black">
+            @Html.ActionLink("Services Page", "Service", "Services")
+        </div>
+    </div>
+    <div id="Products" class="container-fluid">
+        <h1>Products</h1>
+        <p>This is Products Page</p>
+        <div style="color:black">
+            @Html.ActionLink("Home Page", "Index", "Home")
+        </div>
+        <div style="color:black">
+            @Html.ActionLink("Services Page", "Service", "Services")
+        </div>
+       
+    </div>
+    <div id="Services" class="container-fluid">
+        <h1>Services</h1>
+        <p>This is Services Page</p>
+        <div style="color:black">
+            @Html.ActionLink("Products Page", "Product", "Products")
+        </div>
+        <div style="color:black">
+            @Html.ActionLink("Home Page", "Index", "Home")
+        </div>
+        
+    </div>
+   
+
+</body>
+</html>
